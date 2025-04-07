@@ -1,8 +1,9 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 
 const ThemeToggleButton = () => {
   const { theme, toggleTheme } = useContext(ThemeContext)
+  const [disabled, setDisabled] = useState(false)
 
   return (
     <button onClick={toggleTheme} className="toggle-btn">
