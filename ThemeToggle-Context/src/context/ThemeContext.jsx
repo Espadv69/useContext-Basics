@@ -9,3 +9,19 @@ export const ThemeContext = createContext()
 const initialState = {
   theme: 'light',
 }
+
+export const ThemeProvider = ({ children }) => {
+  // Use the theme reducer to manage the theme state
+  const [state, dispatch] = useReducer(themeReducer, initialState)
+
+  // Create a function to toggle the theme
+  const toggleTheme = () => {
+    dispatch({ type: TOGGLE_THEME })
+  }
+
+  return (
+    <ThemeContext.Provider value={{ theme: state.theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  )
+}
