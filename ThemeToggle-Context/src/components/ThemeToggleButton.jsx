@@ -23,7 +23,7 @@ const ThemeToggleButton = () => {
       className={`toggle-btn ${disabled ? 'disabled' : ''}`}
       disabled={disabled}
     >
-      Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+      Switch to {theme === 'light' ? 'Dark 🌑' : 'Light ☀️'} Mode
     </button>
   )
 }
