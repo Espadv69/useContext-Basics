@@ -13,6 +13,8 @@ const ThemeToggleButton = () => {
     timeoutId = setTimeout(() => {
       setDisabled(false)
     }, 500)
+
+    return () => clearTimeout(timeoutId)
   }
 
   return (
