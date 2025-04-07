@@ -11,6 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/Espadv69/useContext-Basics.git"
   },
+  "workspaces": [
+    "ThemeToggle-Context",
+    "UserAuth-Context",
+    "LanguageSelection-Context"
+  ],
   "keywords": [
     "react",
     "useContext",
