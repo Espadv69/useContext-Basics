@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "**useContext-Basics** is a collection of three simple React projects that demonstrate how to use the `useContext` hook for global state management. Each mini-project focuses on a different real-world scenario: theme toggling, user authentication, and language selection.",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/Espadv69/useContext-Basics.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "useContext",
+    "global state management",
+    "theme toggling",
+    "user authentication",
+    "language selection"
+  ],
+  "author": "AitorDev",
   "license": "MIT",
   "type": "module",
   "bugs": {
