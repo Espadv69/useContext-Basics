@@ -7,6 +7,7 @@
 }
 
 body {
+  padding: 0rem 1rem;
   font-family: 'Roboto Variable', sans-serif;
 
   height: 100dvh;
@@ -16,6 +17,7 @@ body {
   place-content: center;
 
   overflow: hidden;
+  background: #dedede;
 }
 
 .content {
@@ -25,6 +27,9 @@ body {
 
   padding: 2rem;
   border-radius: 1rem;
+
+  color: hsl(210, 20%, 10%);
+  background: #fff;
 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
