@@ -29,9 +29,9 @@ body {
   border-radius: 1rem;
 
   color: hsl(210, 20%, 10%);
-  background: #fff;
-
+  background: #f5f5f5;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
 .content.dark {
@@ -39,9 +39,42 @@ body {
   color: hsl(210, 20%, 90%);
 }
 
-button {
-  cursor: pointer;
+h1 {
+  margin-bottom: 1rem;
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.toggle-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+
+  font-size: 1rem;
   border: 2px solid currentColor;
+  border-radius: 5px;
+
   color: currentColor;
   background: transparent;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.dark {
+  border-color: hsl(210, 20%, 90%);
+  color: hsl(210, 20%, 90%);
+}
+
+button {
+  cursor: pointer;
 }
