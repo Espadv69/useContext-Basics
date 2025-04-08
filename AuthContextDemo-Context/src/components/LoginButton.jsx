@@ -30,8 +30,8 @@ const LoginButton = () => {
             className="login__input"
           />
         </label>
-        {error && <p className="login__error">{error}</p>}
       </div>
+        {error && <p className="login__error">{error}</p>}
       <button className="login__button" onClick={handleLogin}>
         🔑 Login
       </button>
