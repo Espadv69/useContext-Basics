@@ -15,6 +15,12 @@ const LoginButton = () => {
   }
 
   if (isAuthenticated) return null
+
+  return (
+    <button className="login-btn" onClick={handleLogin}>
+      🔑 Login
+    </button>
+  )
 }
 
 export default LoginButton
