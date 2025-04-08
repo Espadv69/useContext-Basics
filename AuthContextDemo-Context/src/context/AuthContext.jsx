@@ -15,4 +15,8 @@ export const AuthProvider = ({ children }) => {
   const login = (username) => {
     dispatch({ type: LOGIN, payload: { username } })
   }
+
+  const logout = () => {
+    dispatch({ type: LOGOUT })
+  }
 }
