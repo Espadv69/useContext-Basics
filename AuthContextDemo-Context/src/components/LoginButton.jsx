@@ -8,6 +8,7 @@ const LoginButton = () => {
   const handleLogin = () => {
     if (username) {
       login(username)
+      setUsername('')
     } else {
       // ToDo: show an error message
       alert('Please enter a username')
