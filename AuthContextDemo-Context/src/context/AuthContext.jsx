@@ -8,3 +8,11 @@ const initialState = {
   isAuthenticated: false,
   user: null,
 }
+
+export const AuthProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(authReducer, initialState)
+
+  const login = (username) => {
+    dispatch({ type: LOGIN, payload: { username } })
+  }
+}
