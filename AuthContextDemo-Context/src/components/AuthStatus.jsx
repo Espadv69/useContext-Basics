@@ -5,8 +5,6 @@ const AuthStatus = () => {
 
   return (
     <section className="auth-status">
-      <h2>Authentication Status</h2>
-
       {isAuthenticated ? (
         <p className="auth-status__logged">
           ✅ Logged in as <strong>{user.username}</strong>
