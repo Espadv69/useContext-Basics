@@ -20,13 +20,18 @@ const LoginButton = () => {
 
   return (
     <section className="login">
-      <input
-        type="text"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-        className="login__input"
-      />
-      {error && <p className="login__error">{error}</p>}
+      <div className="form">
+        <label>
+          UserName:
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className="login__input"
+          />
+        </label>
+        {error && <p className="login__error">{error}</p>}
+      </div>
       <button className="login__button" onClick={handleLogin}>
         🔑 Login
       </button>
