@@ -17,9 +17,17 @@ const LoginButton = () => {
   if (isAuthenticated) return null
 
   return (
-    <button className="login-btn" onClick={handleLogin}>
-      🔑 Login
-    </button>
+    <section className="login">
+      <input
+        type="text"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        className="login__input"
+      />
+      <button className="login__button" onClick={handleLogin}>
+        🔑 Login
+      </button>
+    </section>
   )
 }
 
