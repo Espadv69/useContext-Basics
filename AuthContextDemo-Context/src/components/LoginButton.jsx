@@ -3,15 +3,16 @@ import { useAuth } from '../context/AuthContext'
 
 const LoginButton = () => {
   const [username, setUsername] = useState('')
+  const [error, setError] = useState('')
   const { isAuthenticated, login } = useAuth()
 
   const handleLogin = () => {
     if (username) {
       login(username)
       setUsername('')
+      setError('')
     } else {
-      // ToDo: show an error message
-      alert('Please enter a username')
+      setError('Please enter a username')
     }
   }
 
@@ -25,6 +26,7 @@ const LoginButton = () => {
         onChange={(e) => setUsername(e.target.value)}
         className="login__input"
       />
+      {error && <p className="login__error">{error}</p>}
       <button className="login__button" onClick={handleLogin}>
         🔑 Login
       </button>
