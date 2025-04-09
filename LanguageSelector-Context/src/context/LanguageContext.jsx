@@ -14,4 +14,10 @@ export const LanguageProvider = ({ children }) => {
   const changeLanguage = (lang) => {
     dispatch({ type: SET_LANGUAGE, payload: lang })
   }
+
+  return (
+    <LanguageContext.Provider value={{ ...state, changeLanguage }}>
+      {children}
+    </LanguageContext.Provider>
+  )
 }
