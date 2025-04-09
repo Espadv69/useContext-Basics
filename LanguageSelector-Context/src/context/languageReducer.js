@@ -1,4 +1,4 @@
-import { SET_LANGUAGE } from './languageTypes'
+import { SET_LANGUAGE } from './languageTypes.js'
 
 export const languageReducer = (state, action) => {
   switch (action.type) {
