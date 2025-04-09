@@ -8,4 +8,87 @@
 
 body {
   font-family: 'Roboto Variable', sans-serif;
+  height: 100dvh;
+
+  display: grid;
+  place-content: center;
+
+  overflow: hidden;
+}
+
+/* Main container */
+main {
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Title of the app */
+.title {
+  font-size: 2.5rem;
+  color: #0077cc;
+  margin-bottom: 1.5rem;
+}
+
+/* Language Selector */
+.language-selector {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.language-selector label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.language-selector__dropdown {
+  padding: 0.5rem;
+
+  border: none;
+  border-radius: 5px;
+
+  color: white;
+  background-color: #005fa3;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Greeting Section */
+.greeting-section {
+  margin-top: 2rem;
+}
+
+.greeting {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0077cc;
+}
+
+.greeting_message {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .language-selector {
+    font-size: 1rem;
+  }
+
+  .greeting {
+    font-size: 1.2rem;
+  }
+
+  .greeting_message {
+    font-size: 1rem;
+  }
 }
