@@ -9,9 +9,15 @@ const Greeting = () => {
     fr: 'Bonjour! Comment ça va? 👋',
   }
 
+  const CURRENT_LANGUAGE = GREETINGS[language]
+
+  if (!CURRENT_LANGUAGE) {
+    return <p>Language not supported</p>
+  }
+
   return (
     <section className="greeting">
-      <h1>{GREETINGS[language]}</h1>
+      <h1>{CURRENT_LANGUAGE}</h1>
       <p>Current language: {language}</p>
       <p>Change the language in the top right corner!</p>
     </section>
