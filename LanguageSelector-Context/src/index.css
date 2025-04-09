@@ -25,6 +25,8 @@ main {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 600px;
+
+  animation: fadeIn 0.4s ease-in-out;
 }
 
 /* Title of the app */
@@ -90,5 +92,17 @@ main {
 
   .greeting_message {
     font-size: 1rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
