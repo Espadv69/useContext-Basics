@@ -10,4 +10,8 @@ const initialState = {
 
 export const LanguageProvider = ({ children }) => {
   const [state, dispatch] = useReducer(languageReducer, initialState)
+
+  const changeLanguage = (lang) => {
+    dispatch({ type: SET_LANGUAGE, payload: lang })
+  }
 }
