@@ -9,8 +9,13 @@ const Greeting = () => {
     fr: 'Bonjour! Comment ça va? 👋',
   }
 
-  const CURRENT_LANGUAGE = GREETINGS[language]
+  const MESSAGES = {
+    en: `Current language: ${language}`,
+    es: `Idioma actual: ${language}`,
+    fr: `Langue actuelle: ${language}`,
+  }
 
+  const CURRENT_LANGUAGE = GREETINGS[language]
   if (!CURRENT_LANGUAGE) {
     return <p>Language not supported</p>
   }
@@ -18,7 +23,7 @@ const Greeting = () => {
   return (
     <section className="greeting">
       <h1>{CURRENT_LANGUAGE}</h1>
-      <p>Current language: {language}</p>
+      <p>{MESSAGES[language]}</p>
       <p>Change the language in the top right corner!</p>
     </section>
   )
