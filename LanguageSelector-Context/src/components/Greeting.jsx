@@ -8,6 +8,14 @@ const Greeting = () => {
     es: '¡Hola! ¿Cómo estás? 👋',
     fr: 'Bonjour! Comment ça va? 👋',
   }
+
+  return (
+    <section className="greeting">
+      <h1>{GREETINGS[language]}</h1>
+      <p>Current language: {language}</p>
+      <p>Change the language in the top right corner!</p>
+    </section>
+  )
 }
 
 export default Greeting
