@@ -7,3 +7,7 @@ const LanguageContext = createContext()
 const initialState = {
   language: 'en',
 }
+
+export const LanguageProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(languageReducer, initialState)
+}
