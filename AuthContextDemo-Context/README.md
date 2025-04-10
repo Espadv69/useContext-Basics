@@ -20,7 +20,7 @@ This project uses the `useContext` and `useReducer` hooks to manage the authenti
 5. **`AuthStatus.js`**: Conditionally displays a message showing whether a user is logged in or not. 📢
 6. **`App.js`**: Renders the authentication components inside the global `AuthProvider`. 🧩
 
-<p>
+<p align="center">
   <img src="./images/auth.png" alt="Auth Data" />
 
   <img src="./images/no-auth.png" alt="No Auth Data" />
