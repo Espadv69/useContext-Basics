@@ -18,7 +18,7 @@ The app leverages the `useContext` and `useReducer` hooks to manage the theme st
 4. **`App.js`**: The main component that includes all the other components and applies the global `ThemeContext` to the application. 🏗️
 
 <p align="center">
-  <img src="/public/light-mode.png" alt="Light mode" />
+  <img src="./images/light-mode.png" alt="Light mode" />
 
-  <img src="/public/dark-mode.png" alt="Dark mode" />
+  <img src="./images/dark-mode.png" alt="Dark mode" />
 </p>
