@@ -16,3 +16,11 @@ The app leverages the `useContext` and `useReducer` hooks to manage the language
 2. **`LanguageSelector.jsx`**: A component with a dropdown to select the language. When a user selects a language, it updates the context and changes the app's language globally. 📝
 3. **`Greeting.jsx`**: Displays a greeting message that changes dynamically based on the selected language. 🌎
 4. **`App.jsx`**: The main component that includes all other components and applies the global `LanguageContext` to the application. 🏗️
+
+<p align="center">
+  <img src="./images/english.png" alt="English text" />
+
+  <img src="./images/espanol.png" alt="Español text" />
+
+  <img src="./images/frances.png" alt="Frances text" />
+</p>
